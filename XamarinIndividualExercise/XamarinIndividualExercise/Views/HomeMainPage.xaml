@@ -4,22 +4,20 @@
              xmlns:customRenderer="clr-namespace:XamarinIndividualExercise.Controls" 
              xmlns:effects="clr-namespace:XamarinIndividualExercise.Effects"
              x:Class="XamarinIndividualExercise.Views.HomeMainPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="Gray" Padding="24" CornerRadius="0">
-                <Label Text="Individual Exercise" HorizontalTextAlignment="Center" TextColor="White" FontSize="32" FontAttributes="Bold"/>
-            </Frame>
-            <Grid RowDefinitions="90,90,90,90">
-                <Label Grid.Row="0" Text="{Binding orientation, StringFormat='Phone orientation: {0}'}" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
-                <Button Grid.Row="1" Text="Press to get current orientation" BackgroundColor="OrangeRed" TextColor="White" Command="{Binding GetOrientation}" VerticalOptions="Center"/>
-                <customRenderer:CustomEntry Grid.Row="2" Placeholder="Custom Entry Renderer" VerticalOptions="Center"/>
-                <Entry Grid.Row="3" Placeholder="Focus effect on Entry tag" VerticalOptions="Center">
-                    <Entry.Effects>
-                        <effects:FocusEffect />
-                    </Entry.Effects>
-                </Entry>
-                <Label Grid.Row="4" Text="Can't swipe to change the tabs on this phone" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"/>
-            </Grid>
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Frame BackgroundColor="Gray" Padding="24" CornerRadius="0">
+            <Label Text="Individual Exercise" HorizontalTextAlignment="Center" TextColor="White" FontSize="32" FontAttributes="Bold"/>
+        </Frame>
+        <Grid RowDefinitions="90,90,90,90">
+            <Label Grid.Row="0" Text="{Binding orientation, StringFormat='Phone orientation: {0}'}" FontSize="Large" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+            <Button Grid.Row="1" Text="Press to get current orientation" BackgroundColor="OrangeRed" TextColor="White" Command="{Binding GetOrientation}" VerticalOptions="Center"/>
+            <customRenderer:CustomEntry Grid.Row="2" Placeholder="Custom Entry Renderer" VerticalOptions="Center"/>
+            <Entry Grid.Row="3" Placeholder="Focus effect on Entry tag" VerticalOptions="Center">
+                <Entry.Effects>
+                    <effects:FocusEffect />
+                </Entry.Effects>
+            </Entry>
+            <Label Grid.Row="4" Text="Can't swipe to change the tabs on this phone" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" FontAttributes="Bold"/>
+        </Grid>
+    </StackLayout>
 </ContentPage>
