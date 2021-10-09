@@ -7,6 +7,6 @@ namespace XamarinIndividualExercise.Services
 {
     public interface IDeviceOrientationService
     {
-        IDeviceOrientationService GetOrientation();
+        DeviceOrientation GetOrientation();
     }
 }
