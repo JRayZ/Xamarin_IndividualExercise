@@ -10,14 +10,14 @@ namespace XamarinIndividualExercise.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        public DeviceOrientation orientation { get; set; }
-        public ICommand GetDeviceOrientation { get; set; }
+        public DeviceOrientation Orientation { get; set; }
+        public ICommand GetOrientationCommand { get; }
         public MainViewModel()
         {
             IDeviceOrientationService service = DependencyService.Get<IDeviceOrientationService>();
-            GetDeviceOrientation = new Command(() =>
+            GetOrientationCommand = new Command(() =>
             {
-                orientation = service.GetOrientation();
+                Orientation = service.GetOrientation();
             });
         }
     }
