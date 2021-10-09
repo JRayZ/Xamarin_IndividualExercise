@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinIndividualExercise.Views;
 
 namespace XamarinIndividualExercise
 {
@@ -10,7 +11,7 @@ namespace XamarinIndividualExercise
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new HomeTabbedPage();
         }
 
         protected override void OnStart()
