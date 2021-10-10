@@ -7,7 +7,7 @@ namespace XamarinIndividualExercise.Effects
 {
     class FocusEffect : RoutingEffect
     {
-        public FocusEffect() : base("IndividualExercise.FocusEffect")
+        public FocusEffect() : base("IndividualExercise.{nameof(FocusEffect)}")
         {
         }
     }
